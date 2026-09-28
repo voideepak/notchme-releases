@@ -1,6 +1,6 @@
 # NotchMe
 
-A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, the top processes, and a Clipboard History.
+A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, a Timer and Stopwatch, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, the top processes, and a Clipboard History.
 
 Requires a Mac with a notch and macOS 14 or later.
 
@@ -23,14 +23,14 @@ After that, NotchMe opens like any other app. You do this once per download.
 
 NotchMe checks for a new version at launch and once a day, and shows it in Settings › General with a dot on the gear. **Download** opens the release page; replace the app the same way. Turn the check off in Settings if you'd rather it stayed offline.
 
-NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, hide Tabs you don't use, choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
+NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, hide Tabs you don't use or put them in your own order, choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
 
 ### Shortcuts
 
 | Keys | Does |
 |---|---|
 | ⌥⌘N | Open or close the notch (change it in Settings › General) |
-| ⌥⌘1–⌥⌘9 | Open the notch on that Tab from any app (numbered as in the Tab bar); again to close |
+| ⌥⌘1–⌥⌘9 | Open the notch on that Tab from any app (numbered as in the Tab bar; reorder Tabs in Settings › Tabs); again to close |
 | ⌘1–⌘9 | Switch Tabs while the notch is open |
 | Esc | Close the notch; while typing, stop editing first (a rename goes back to the old title) |
 | ⌥⌘P | Play or pause the Teleprompter, while its Tab is open |
@@ -39,6 +39,8 @@ NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open 
 While the Teleprompter is playing, the notch stays open when you click into another app, so you can read while you record. Esc or ⌥⌘N closes it and pauses, and so does switching to another Tab. Keep as many Scripts as you like, each remembering where you stopped, or import one from a recent Apple Note. Playing from the top starts with a 3-2-1 Countdown, and **Mirrored** flips the text for a beamsplitter (both in Settings › General).
 
 On the To-do Tab, double-click a To-do to rename it; click its due date, **Add date**, or **…** to change the date or Priority; and use the trash to delete it (with 3 seconds to undo). The first line of a reminder's notes shows under its title.
+
+The Timer Tab has a Timer with presets from 1 to 60 minutes and a Stopwatch with Laps. When a Timer runs out, the notch opens with a sound; both keep running while the notch is closed or NotchMe is quit.
 
 The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you hide the Tab.
 
