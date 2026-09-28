@@ -23,14 +23,14 @@ After that, NotchMe opens like any other app. You do this once per download.
 
 NotchMe checks for a new version at launch and once a day, and shows it in Settings › General with a dot on the gear. **Download** opens the release page; replace the app the same way. Turn the check off in Settings if you'd rather it stayed offline.
 
-NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, hide Tabs you don't use or put them in your own order, choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
+NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, pick the Accent colour of the open notch, pin up to 8 Tabs to the Tab bar and put them in your own order (the rest wait under **⋯ More**), choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
 
 ### Shortcuts
 
 | Keys | Does |
 |---|---|
 | ⌥⌘N | Open or close the notch (change it in Settings › General) |
-| ⌥⌘1–⌥⌘9 | Open the notch on that Tab from any app (numbered as in the Tab bar; reorder Tabs in Settings › Tabs); again to close |
+| ⌥⌘1–⌥⌘9 | Open the notch on that Tab from any app (Home, then your pinned Tabs, as in the Tab bar; pin and reorder in Settings › Tabs); again to close |
 | ⌘1–⌘9 | Switch Tabs while the notch is open |
 | Esc | Close the notch; while typing, stop editing first (a rename goes back to the old title) |
 | ⌥⌘P | Play or pause the Teleprompter, while its Tab is open |
@@ -40,9 +40,9 @@ While the Teleprompter is playing, the notch stays open when you click into anot
 
 On the To-do Tab, double-click a To-do to rename it; click its due date, **Add date**, or **…** to change the date or Priority; and use the trash to delete it (with 3 seconds to undo). The first line of a reminder's notes shows under its title.
 
-The Timer Tab has a Timer with presets from 1 to 60 minutes and a Stopwatch with Laps. When a Timer runs out, the notch opens with a sound; both keep running while the notch is closed or NotchMe is quit.
+The Clock Tab holds the Pomodoro, a Timer with presets from 1 to 60 minutes, and a Stopwatch with Laps; pick one at its top. When a Phase or Timer runs out, the notch opens on Clock with a sound; all three keep running while the notch is closed or NotchMe is quit.
 
-The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you hide the Tab.
+The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you switch off **Keep Clipboard History** in Settings › General.
 
 ### Permissions
 
