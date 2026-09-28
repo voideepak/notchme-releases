@@ -1,6 +1,6 @@
 # NotchMe
 
-A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, and the top processes.
+A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, the top processes, and a Clipboard History.
 
 Requires a Mac with a notch and macOS 14 or later.
 
@@ -21,6 +21,8 @@ NotchMe isn't notarized by Apple, so macOS blocks the first launch: it says the 
 
 After that, NotchMe opens like any other app. You do this once per download.
 
+NotchMe checks for a new version at launch and once a day, and shows it in Settings › General with a dot on the gear. **Download** opens the release page; replace the app the same way. Turn the check off in Settings if you'd rather it stayed offline.
+
 NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, hide Tabs you don't use, choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
 
 ### Shortcuts
@@ -34,9 +36,11 @@ NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open 
 | ⌥⌘P | Play or pause the Teleprompter, while its Tab is open |
 | ⌥⌘↑ / ⌥⌘↓ | Teleprompter faster / slower, while its Tab is open |
 
-While the Teleprompter is playing, the notch stays open when you click into another app, so you can read while you record. Esc or ⌥⌘N closes it and pauses, and so does switching to another Tab. Keep as many Scripts as you like, each remembering where you stopped, or import one from a recent Apple Note.
+While the Teleprompter is playing, the notch stays open when you click into another app, so you can read while you record. Esc or ⌥⌘N closes it and pauses, and so does switching to another Tab. Keep as many Scripts as you like, each remembering where you stopped, or import one from a recent Apple Note. Playing from the top starts with a 3-2-1 Countdown, and **Mirrored** flips the text for a beamsplitter (both in Settings › General).
 
-On the To-do Tab, double-click a To-do to rename it, and click its due date (or **Add date**) to change or clear it.
+On the To-do Tab, double-click a To-do to rename it; click its due date, **Add date**, or **…** to change the date or Priority; and use the trash to delete it (with 3 seconds to undo). The first line of a reminder's notes shows under its title.
+
+The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you hide the Tab.
 
 ### Permissions
 
@@ -45,7 +49,7 @@ macOS asks the first time each feature needs one. Every release is signed with t
 | Asked for | Used for |
 |---|---|
 | Calendar | today's Agenda, Meeting countdowns, and Join buttons |
-| Reminders | To-dos from the list you choose: adding, completing, renaming, due dates, and Done Today |
+| Reminders | To-dos from the list you choose: adding, completing, deleting, renaming, due dates, Priority, and Done Today |
 | Automation: Spotify | now playing and playback controls |
 | Automation: Notes | recent notes, Quick Capture, and importing a note as a Script |
 | Automation: iTerm2 | bringing a waiting Claude or Codex session's tab to the front |
