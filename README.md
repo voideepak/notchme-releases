@@ -25,6 +25,8 @@ NotchMe checks for a new version at launch and once a day, and shows it in Setti
 
 NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open it, or press **⌥⌘N** from any app. Settings (the gear) lets you change that shortcut, pick the Accent colour of the open notch, pin up to 8 Tabs to the Tab bar and put them in your own order (the rest wait under **⋯ More**), choose what the collapsed notch shows, and pick which figure stands for Claude and Codex on Home and in the notch.
 
+The notch shows on every display. On an external monitor, or with the lid closed, NotchMe draws one at the top centre of the screen. It opens on the display you click, or the one with the pointer for ⌥⌘N, Tab shortcuts, and a Phase or Timer running out. Clicking another display's notch while it's open moves it there. It steps aside over a fullscreen app on an external monitor, but still opens there for ⌥⌘N or a Phase or Timer running out. Turn off **Notch on every display** in Settings › General to keep it on the MacBook only.
+
 ### Shortcuts
 
 | Keys | Does |
@@ -44,6 +46,8 @@ The Clock Tab holds the Pomodoro, a Timer with presets from 1 to 60 minutes, and
 
 The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you switch off **Keep Clipboard History** in Settings › General.
 
+While Spotify plays, the collapsed notch shows the album art with small bars beside it, coloured from the art. The Spotify Tab shows the album, shuffle and repeat, and lets you click or drag the progress bar to jump within the track. The speech-bubble button swaps the art for the track's lyrics: timed lyrics follow along, and clicking a line jumps there. Lyrics come from [LRCLIB](https://lrclib.net), which is only asked, with the track's title, artist, album, and length, while lyrics are on screen.
+
 ### Permissions
 
 macOS asks the first time each feature needs one. Every release is signed with the same certificate, so updates keep the permissions you've already given.
@@ -52,7 +56,7 @@ macOS asks the first time each feature needs one. Every release is signed with t
 |---|---|
 | Calendar | today's Agenda, Meeting countdowns, and Join buttons |
 | Reminders | To-dos from the list you choose: adding, completing, deleting, renaming, due dates, Priority, and Done Today |
-| Automation: Spotify | now playing and playback controls |
+| Automation: Spotify | now playing, playback controls, shuffle, repeat, and jumping within a track |
 | Automation: Notes | recent notes, Quick Capture, and importing a note as a Script |
 | Automation: iTerm2 | bringing a waiting Claude or Codex session's tab to the front |
 
