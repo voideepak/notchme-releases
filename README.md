@@ -27,6 +27,8 @@ NotchMe has no Dock icon. It lives in the notch: hover to see it, click to open 
 
 The notch shows on every display. On an external monitor, or with the lid closed, NotchMe draws one at the top centre of the screen. It opens on the display you click, or the one with the pointer for ⌥⌘N, Tab shortcuts, and a Phase or Timer running out. Clicking another display's notch while it's open moves it there. It steps aside over a fullscreen app on an external monitor, but still opens there for ⌥⌘N or a Phase or Timer running out. Turn off **Notch on every display** in Settings › General to keep it on the MacBook only.
 
+Home is yours to arrange. Click the pencil in the Tab bar (or right-click a card and choose **Edit Home**) to add a card for any Tab with **+**, remove one with ⊖, drag cards around, and resize them with the corner handle or right-click › **Size**. Cards snap to a 4×2 grid, each in the sizes that suit it, and dropping a card on another swaps them. **Reset** puts back the default; **Done** or Esc finishes.
+
 ### Shortcuts
 
 | Keys | Does |
