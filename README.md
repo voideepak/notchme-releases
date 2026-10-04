@@ -29,6 +29,8 @@ The notch shows on every display. On an external monitor, or with the lid closed
 
 Home is yours to arrange. Click the pencil in the Tab bar (or right-click a card and choose **Edit Home**) to add a card for any Tab with **+**, remove one with ⊖, drag cards around, and resize them with the corner handle or right-click › **Size**. Cards snap to a 4×2 grid, each in the sizes that suit it, and dropping a card on another swaps them. **Reset** puts back the default; **Done** or Esc finishes.
 
+**+** also makes cards of your own, as many as fit: a **Sticky** you type straight onto, a **Launcher** that opens an app, a file or folder, or a link (and follows a file that's moved), and a **Number** that shows one figure large, such as Codex's weekly limit, today's Focus count, App Time, or To-dos left. Right-click a Launcher or Number while editing and choose **Change…** to set it up again.
+
 ### Shortcuts
 
 | Keys | Does |
@@ -46,6 +48,8 @@ On the To-do Tab, double-click a To-do to rename it; click its due date, **Add d
 
 The Clock Tab holds the Pomodoro, a Timer with presets from 1 to 60 minutes, and a Stopwatch with Laps; pick one at its top. When a Phase or Timer runs out, the notch opens on Clock with a sound; all three keep running while the notch is closed or NotchMe is quit.
 
+The Notes Tab reads your Apple Notes without leaving the notch: click a note to read it there (⌘-click opens it in Notes), star up to 4 to keep them at the top, and search every title with the magnifying glass. A **Note Card** on Home shows one note's text, read again each time the notch opens. Quick Capture turns a line into a new note, or, with a Shortcuts shortcut named "NotchMe Capture" (Get Text from Shortcut Input, then Append Text to Note), adds it to one Capture Note; set this in Settings › General.
+
 The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you switch off **Keep Clipboard History** in Settings › General.
 
 While Spotify plays, the collapsed notch shows the album art with small bars beside it, coloured from the art. The Spotify Tab shows the album, shuffle and repeat, and lets you click or drag the progress bar to jump within the track. The speech-bubble button swaps the art for the track's lyrics: timed lyrics follow along, and clicking a line jumps there. Lyrics come from [LRCLIB](https://lrclib.net), which is only asked, with the track's title, artist, album, and length, while lyrics are on screen.
@@ -59,7 +63,7 @@ macOS asks the first time each feature needs one. Every release is signed with t
 | Calendar | today's Agenda, Meeting countdowns, and Join buttons |
 | Reminders | To-dos from the list you choose: adding, completing, deleting, renaming, due dates, Priority, and Done Today |
 | Automation: Spotify | now playing, playback controls, shuffle, repeat, and jumping within a track |
-| Automation: Notes | recent notes, Quick Capture, and importing a note as a Script |
+| Automation: Notes | recent notes, reading notes and Note Cards, Quick Capture, and importing a note as a Script |
 | Automation: iTerm2 | bringing a waiting Claude or Codex session's tab to the front |
 
 ## Claude Code usage limits and context
