@@ -1,6 +1,6 @@
 # NotchMe
 
-A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, a Timer and Stopwatch, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, the top processes, and a Clipboard History.
+A macOS app that turns the MacBook notch into a small dashboard: a Pomodoro timer, a Timer and Stopwatch, today's Calendar, To-dos from Apple Reminders, Spotify, Apple Notes, a Teleprompter, Claude Code and Codex sessions and usage, App Time, the top processes, daily Habits, and a Clipboard History.
 
 Requires a Mac with a notch and macOS 14 or later.
 
@@ -36,6 +36,8 @@ Home is yours to arrange. Click the pencil in the Tab bar (or right-click a card
 | Keys | Does |
 |---|---|
 | ⌥⌘N | Open or close the notch (change it in Settings › General) |
+| ⌃⌥V | Open the Clipboard Picker; keep holding Control-Option and press V to browse older clips, or Shift-V for newer clips. Release to select and paste; Esc cancels. Change it in Settings › General. |
+| ⌥⌘H | Open the Habits history window, unless this is your configured Open NotchMe shortcut |
 | ⌥⌘1–⌥⌘9 | Open the notch on that Tab from any app (Home, then your pinned Tabs, as in the Tab bar; pin and reorder in Settings › Tabs); again to close |
 | ⌘1–⌘9 | Switch Tabs while the notch is open |
 | Esc | Close the notch; while typing, stop editing first (a rename goes back to the old title) |
@@ -50,9 +52,17 @@ The Clock Tab holds the Pomodoro, a Timer with presets from 1 to 60 minutes, and
 
 The Notes Tab reads your Apple Notes without leaving the notch: click a note to read it there (⌘-click opens it in Notes), star up to 4 to keep them at the top, and search every title with the magnifying glass. A **Note Card** on Home shows one note's text, read again each time the notch opens. Quick Capture turns a line into a new note, or, with a Shortcuts shortcut named "NotchMe Capture" (Get Text from Shortcut Input, then Append Text to Note), adds it to one Capture Note; set this in Settings › General.
 
-The Clipboard Tab keeps the last 20 pieces of text you copied; click one to copy it again. It keeps nothing a password manager marks as a password, and it forgets everything on quit or when you switch off **Keep Clipboard History** in Settings › General.
+The Clipboard Tab keeps 99 plain-text copies by default, adjustable from 10 to 500 in Settings › General. Select a clip for its full preview, use **Copy** to copy it again, or delete individual clips. History stays on this Mac and survives quitting by default. Turn off **Remember history after quitting** to remove saved history while keeping the current session; turn off **Keep Clipboard History** to delete all history and stop recording. Copies marked concealed or transient are excluded; unmarked sensitive text can still be captured.
+
+For keyboard access, press **⌃⌥V** from another app. Hold Control-Option and press V again, Shift-V, or the arrow keys to browse. Releasing the modifiers selects the clip and pastes it into the original app; Escape cancels. **Sticky picker** waits for Return instead, and **Wrap around history** allows cycling past either end. Without Accessibility permission, or with **Paste automatically** off, the selection is copied and a notice tells you to press Command-V yourself. If another app such as Jumpcut owns the shortcut, quit it or choose a different combination in Settings; Shift is reserved for reverse cycling.
 
 While Spotify plays, the collapsed notch shows the album art with small bars beside it, coloured from the art. The Spotify Tab shows the album, shuffle and repeat, and lets you click or drag the progress bar to jump within the track. The speech-bubble button swaps the art for the track's lyrics: timed lyrics follow along, and clicking a line jumps there. Lyrics come from [LRCLIB](https://lrclib.net), which is only asked, with the track's title, artist, album, and length, while lyrics are on screen.
+
+### Habits
+
+Find **Habits** under **More**, or pin it in Settings › Tabs. Add daily habits with a name, colour and icon, then check them in from the notch. **Open window** (or **⌥⌘H**) opens the full history: current and best streaks, this month's completion percentage, total check-ins, a past-year grid and the last seven days. Click a past day to backfill or undo it; use the habit's **…** menu to edit or delete it.
+
+Habits and their history stay on this Mac and survive quitting. A fresh install starts empty. The month percentage uses elapsed days through today; a current streak stays alive through yesterday until today's check-in. This version tracks daily habits without reminders or cloud sync. You can add a Habits Card in the Home editor and configure its progress Glance in Settings › Glance. If the configurable Open Shortcut is already ⌥⌘H, it keeps precedence; use **Open window** for Habits.
 
 ### Permissions
 
@@ -65,6 +75,7 @@ macOS asks the first time each feature needs one. Every release is signed with t
 | Automation: Spotify | now playing, playback controls, shuffle, repeat, and jumping within a track |
 | Automation: Notes | recent notes, reading notes and Note Cards, Quick Capture, and importing a note as a Script |
 | Automation: iTerm2 | bringing a waiting Claude or Codex session's tab to the front |
+| Accessibility | pasting a selected clip into the original app; requested when automatic paste is first used |
 
 ## Claude Code usage limits and context
 
