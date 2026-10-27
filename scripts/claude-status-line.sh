@@ -1,13 +1,15 @@
 #!/bin/sh
 # Claude Code status line for NotchMe. Saves Usage Limits and the live session's context
-# window size under ~/.claude/notchme, then prints "5h 42% · Wk 18%" for the status line.
+# window size under the account's config folder, then prints "5h 42% · Wk 18%".
 input=$(cat)
-dir="$HOME/.claude/notchme"
+config_dir="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+case "$config_dir" in '~/'*) config_dir="$HOME/${config_dir#\~/}" ;; esac
+dir="$config_dir/notchme"
 
 if printf '%s' "$input" | jq -e '.rate_limits' >/dev/null 2>&1; then
     mkdir -p "$dir"
     printf '%s' "$input" | jq -c --argjson readAt "$(date +%s)" '{read_at: $readAt, rate_limits: .rate_limits}' \
-        > "$dir/usage-limits.json.tmp" && mv "$dir/usage-limits.json.tmp" "$dir/usage-limits.json"
+        > "$dir/usage-limits.json.tmp.$$" && mv "$dir/usage-limits.json.tmp.$$" "$dir/usage-limits.json"
 fi
 
 session_id=$(printf '%s' "$input" | jq -r '.session_id // empty' 2>/dev/null)
