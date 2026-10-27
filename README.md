@@ -79,9 +79,11 @@ macOS asks the first time each feature needs one. Every release is signed with t
 
 ## Claude Code usage limits and context
 
-The Claude Tab reads what Claude Code already writes under `~/.claude`. Usage Limits and the context window size come from Claude Code's status line, so NotchMe ships a status line script that saves them. It needs [`jq`](https://jqlang.org) (`brew install jq`).
+The Claude Tab has an **Account** selector. Add named local Claude config folders in **Settings › Agents › Add account**, using the detected folders (such as `~/.claude-personal` and `~/.claude-work`) or **Choose folder…**. Rename an account there and press Return to save. The selected account supplies the Claude Tab, Home stats, collapsed Glance and waiting alerts; Codex is independent. Selection survives quitting, and each folder has its own remembered activity history. The Default account preserves your existing `~/.claude` history. Removing an account from NotchMe never deletes Claude's files.
 
-Copy [`scripts/claude-status-line.sh`](scripts/claude-status-line.sh) somewhere permanent, make it executable, and point Claude Code at it in `~/.claude/settings.json`:
+Usage Limits and the context window size come from Claude Code's status line, so NotchMe ships a status line script that saves them. It needs [`jq`](https://jqlang.org) (`brew install jq`).
+
+Copy the updated [`scripts/claude-status-line.sh`](scripts/claude-status-line.sh) somewhere permanent, make it executable, and set `statusLine.command` in **each account's** `settings.json` (for example `~/.claude-personal/settings.json`). Merge this field into your existing file, preserving other settings:
 
 ```json
 {
@@ -92,4 +94,13 @@ Copy [`scripts/claude-status-line.sh`](scripts/claude-status-line.sh) somewhere 
 }
 ```
 
-Your status line then shows `5h 42% · Wk 18%`. If you already use a status line, NotchMe works without this script. The Claude Tab still shows sessions, activity, and tokens, but no Usage Limits, and context only as a count.
+Launch each account with its matching config directory, for example:
+
+```sh
+CLAUDE_CONFIG_DIR="$HOME/.claude-personal" claude
+CLAUDE_CONFIG_DIR="$HOME/.claude-work" claude
+```
+
+The script respects `CLAUDE_CONFIG_DIR` and falls back to `~/.claude` when unset. It writes `notchme/usage-limits.json` and per-session context-window files inside that account's folder, so accounts do not overwrite each other's limits. Claude documents this config-directory variable in its [environment variable reference](https://code.claude.com/docs/en/env-vars).
+
+Your status line then shows `5h 42% · Wk 18%`. If you already use a different status line, NotchMe still reads that account's sessions, activity and tokens, but limits remain unreported until the NotchMe script runs. NotchMe reads local usage files and does not need your login credentials.
